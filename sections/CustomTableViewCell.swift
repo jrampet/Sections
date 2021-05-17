@@ -12,6 +12,11 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var bioLabel: UILabel!
     @IBOutlet weak var headLabel : UILabel!
     @IBOutlet var seperator: UILabel!
+    
 
 
+}
+class newCustomTableViewCell : UITableViewCell{
+    @IBOutlet weak var bioLabel: UILabel!
+    @IBOutlet var seperator: UILabel!
 }

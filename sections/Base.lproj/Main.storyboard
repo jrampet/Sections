@@ -40,9 +40,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziI-c0-vBq">
-                                                    <rect key="frame" x="0.0" y="90" width="414" height="2"/>
+                                                    <rect key="frame" x="0.0" y="91" width="414" height="1"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="2" id="6aX-ze-NIB"/>
+                                                        <constraint firstAttribute="height" constant="1" id="6aX-ze-NIB"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -66,6 +66,44 @@
                                             <outlet property="bioLabel" destination="a5J-Yf-OyQ" id="IZa-8Z-xnZ"/>
                                             <outlet property="headLabel" destination="oM8-ij-8eW" id="aeY-Se-a30"/>
                                             <outlet property="seperator" destination="ziI-c0-vBq" id="gtP-no-Nwv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellnew" id="3ml-pB-o1D" customClass="newCustomTableViewCell" customModule="sections" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="141.5" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3ml-pB-o1D" id="FtC-O3-owx">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKb-dS-Yen">
+                                                    <rect key="frame" x="25" y="10" width="364" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoR-Sp-RDG">
+                                                    <rect key="frame" x="0.0" y="48" width="414" height="2"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="uMN-sx-vkt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="XoR-Sp-RDG" secondAttribute="bottom" id="BCV-eB-JQU"/>
+                                                <constraint firstItem="XoR-Sp-RDG" firstAttribute="leading" secondItem="FtC-O3-owx" secondAttribute="leading" id="Rri-iO-e5V"/>
+                                                <constraint firstItem="zKb-dS-Yen" firstAttribute="leading" secondItem="FtC-O3-owx" secondAttribute="leading" constant="25" id="Whc-no-a8t"/>
+                                                <constraint firstAttribute="bottom" secondItem="zKb-dS-Yen" secondAttribute="bottom" constant="25" id="fSH-hd-mOg"/>
+                                                <constraint firstAttribute="trailing" secondItem="XoR-Sp-RDG" secondAttribute="trailing" id="gMh-fV-F2M"/>
+                                                <constraint firstItem="zKb-dS-Yen" firstAttribute="top" secondItem="FtC-O3-owx" secondAttribute="top" constant="10" id="jsI-HN-7R8"/>
+                                                <constraint firstAttribute="trailing" secondItem="zKb-dS-Yen" secondAttribute="trailing" constant="25" id="m9w-Bf-jFc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bioLabel" destination="zKb-dS-Yen" id="cVF-T8-fZk"/>
+                                            <outlet property="seperator" destination="XoR-Sp-RDG" id="xgc-II-7oT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
